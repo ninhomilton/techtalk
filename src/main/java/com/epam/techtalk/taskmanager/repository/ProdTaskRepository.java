@@ -1,6 +1,5 @@
 package com.epam.techtalk.taskmanager.repository;
 
-import com.epam.techtalk.taskmanager.TechtalkApplication;
 import com.epam.techtalk.taskmanager.model.Task;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

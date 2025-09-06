@@ -1,21 +1,32 @@
 package com.epam.techtalk.taskmanager.model;
 
 import java.time.LocalDate;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Task {
     private Long id;
+
+    @JsonProperty("task_title")
     private String title;
     private String description;
+
+    @JsonProperty("due_date")
     private LocalDate dueDate;
     private boolean isCompleted;
 
+    private Author author;
+
+    public Task() {}
+
     // Constructors, Getters, and Setters
-    public Task(Long id, String title, String description, LocalDate dueDate, boolean isCompleted) {
+    public Task(Long id, String title, String description, LocalDate dueDate, boolean isCompleted, Author author) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.dueDate = dueDate;
         this.isCompleted = isCompleted;
+        this.author = author;
     }
 
     public Long getId() {
@@ -56,5 +67,9 @@ public class Task {
 
     public void setCompleted(boolean completed) {
         isCompleted = completed;
+    }
+
+    public Author getAuthor() {
+        return author;
     }
 }
