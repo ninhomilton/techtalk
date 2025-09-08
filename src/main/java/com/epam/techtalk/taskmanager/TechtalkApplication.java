@@ -5,7 +5,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
+@EnableFeignClients
 @SpringBootApplication
 public class TechtalkApplication {
 
@@ -18,18 +20,8 @@ public class TechtalkApplication {
 
 		SpringApplication.run(TechtalkApplication.class, args);
 
-		/*try {
-			int result = divide(4, 0);
-			logger.debug("Division result: {}", result);
-		} catch (Exception e) {
-			logger.error("An error occurred: {}", e.getMessage(), e);
-		}*/
 
 		logger.warn("Application finished with warnings.");
-	}
-
-	public static int divide(int a, int b) {
-		return a / b; // This will throw an ArithmeticException when b=0
 	}
 
 }

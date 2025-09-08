@@ -19,7 +19,7 @@
     </appender>
 
     <!-- Root logger: Use both console and file appenders -->
-    <root level="info">
+    <root level="debug">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </root>

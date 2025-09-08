@@ -13,18 +13,16 @@ public class DeserializationExample {
 
     public static void main(String[] args) throws Exception {
         // Input JSON
-        String json = """
-        {
-          "id": 1,
-          "task_title": "Complete Spring Presentation",
-          "description": "Prepare slides and demo for the team.",
-          "due_date": "2023-12-01",
-          "author": {
-            "name": "John Doe",
-            "email": "john.doe@example.com"
-          }
-        }
-        """;
+        String json = "{\n" +
+                "  \"id\": 1,\n" +
+                "  \"task_title\": \"Complete Spring Presentation\",\n" +
+                "  \"description\": \"Prepare slides and demo for the team.\",\n" +
+                "  \"due_date\": \"2023-12-01\",\n" +
+                "  \"author\": {\n" +
+                "    \"name\": \"John Doe\",\n" +
+                "    \"email\": \"john.doe@example.com\"\n" +
+                "  }\n" +
+                "}";
 
         // Deserialize using Jackson
         ObjectMapper objectMapper = new ObjectMapper();
