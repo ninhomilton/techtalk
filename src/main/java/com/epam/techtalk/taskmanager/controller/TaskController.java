@@ -1,5 +1,7 @@
 package com.epam.techtalk.taskmanager.controller;
 
+import com.epam.techtalk.taskmanager.http.RecipeFeingClient;
+import com.epam.techtalk.taskmanager.model.Recipe;
 import com.epam.techtalk.taskmanager.model.Task;
 import com.epam.techtalk.taskmanager.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +13,12 @@ import java.util.List;
 @RequestMapping("/tasks")
 public class TaskController {
     private final TaskService taskService;
+    private final RecipeFeingClient recipeFeingClient;
 
     @Autowired
-    public TaskController(TaskService taskService) {
+    public TaskController(TaskService taskService, RecipeFeingClient recipeFeingClient) {
         this.taskService = taskService;
+        this.recipeFeingClient = recipeFeingClient;
     }
 
     @PostMapping
@@ -37,5 +41,10 @@ public class TaskController {
         Task task = taskService.findTaskById(id);
         task.setCompleted(completed);
         return taskService.save(task);
+    }
+
+    @GetMapping("/recipe")
+    public Recipe getRecipe(String name) {
+        return recipeFeingClient.getDrinksByName(name);
     }
 }
