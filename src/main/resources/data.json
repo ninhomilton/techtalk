@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "task_title": "Entrevistar barman",
+    "description": "Entrevistar al candidato a barman",
+    "due_date": "2025-09-12",
+    "priority": "Alta",
+    "status": "Pendiente",
+    "completed": false,
+    "author": {
+      "name": "Juan Pérez",
+      "email": "juan.perez@mibar.com"
+    }
+  },
+  {
+    "id": 2,
+    "task_title": "Cerrar facturación",
+    "description": "Revisar y cerrar la facturación mensual",
+    "due_date": "2025-09-15",
+    "priority": "Media",
+    "status": "En progreso",
+    "completed": false,
+    "author": {
+      "name": "María López",
+      "email": "maria.lopez@mibar.com"
+    }
+  },
+  {
+    "id": 4,
+    "task_title": "Presentar impuestos",
+    "due_date": "2025-10-10",
+    "priority": "Media",
+    "status": "Pendiente",
+    "completed": false,
+    "author": {
+      "name": "El Barman 1",
+      "email": "barman1@mibar.com"
+    }
+  },
+  {
+    "id": 4,
+    "task_title": "Preparar coctail",
+    "description": "Preparar el coctail especial del día",
+    "recipeName": "Mojito",
+    "due_date": "2025-09-10",
+    "priority": "Alta",
+    "status": "En progreso",
+    "completed": false,
+    "author": {
+      "name": "El Barman 1",
+      "email": "barman1@mibar.com"
+    }
+  },
+  {
+    "id": 5,
+    "task_title": "Preparar coctail",
+    "description": "Preparar el coctail especial del día",
+    "recipeName": "margarita",
+    "due_date": "2025-09-10",
+    "priority": "Alta",
+    "status": "En progreso",
+    "completed": false,
+    "author": {
+      "name": "El Barman 2",
+      "email": "barman2@mibar.com"
+    }
+  },
+  {
+    "id": 6,
+    "task_title": "Preparar coctail",
+    "description": "Preparar Mojito",
+    "recipeName": "Mojito",
+    "due_date": "2025-09-10",
+    "priority": "Alta",
+    "status": "En progreso",
+    "completed": false,
+    "author": {
+      "name": "El Barman 1",
+      "email": "barman1@mibar.com"
+    }
+  },
+  {
+    "id": 7,
+    "task_title": "Preparar coctail",
+    "description": "Preparar tom collins",
+    "recipeName": "tom collins",
+    "due_date": "2025-09-10",
+    "priority": "Alta",
+    "status": "En progreso",
+    "completed": false,
+    "author": {
+      "name": "El Barman 2",
+      "email": "barman2@mibar.com"
+    }
+  },
+  {
+    "id": 8,
+    "task_title": "Preparar coctail",
+    "description": "Preparar dry martini",
+    "recipeName": "dry martini",
+    "due_date": "2025-09-10",
+    "priority": "Alta",
+    "status": "En progreso",
+    "completed": false,
+    "author": {
+      "name": "El Barman 3",
+      "email": "barman3@mibar.com"
+    }
+  }
+]

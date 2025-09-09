@@ -18,8 +18,10 @@
         </encoder>
     </appender>
 
+    <logger name="java.io" level="OFF" />
+
     <!-- Root logger: Use both console and file appenders -->
-    <root level="debug">
+    <root level="error">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </root>

@@ -16,7 +16,9 @@ public class SerializationExample {
                 "Prepare slides and demo for the team.",
                 LocalDate.of(2023, 12, 1),
                 false,
-                new Author("John Doe", "john.doe@example.com")
+                new Author("John Doe", "john.doe@example.com"),
+                "In progress",
+                "High"
         );
 
         // Create the ObjectMapper and register the Java Time module

@@ -3,10 +3,12 @@ com/epam/techtalk/taskmanager/service/TaskService.class
 com/epam/techtalk/taskmanager/TechtalkApplication.class
 com/epam/techtalk/taskmanager/model/Author.class
 com/epam/techtalk/taskmanager/controller/TaskController.class
+com/epam/techtalk/taskmanager/repository/DevTaskRepository$1.class
 com/epam/techtalk/taskmanager/repository/TaskRepository.class
 com/epam/techtalk/taskmanager/lifecycle/LifeCycleBean.class
 com/epam/techtalk/taskmanager/example/DeserializationExample.class
 com/epam/techtalk/taskmanager/example/SerializationExample.class
+com/epam/techtalk/taskmanager/controller/RecipeController.class
 com/epam/techtalk/taskmanager/repository/DevTaskRepository.class
 com/epam/techtalk/taskmanager/http/TaskFeignClient.class
 com/epam/techtalk/taskmanager/repository/ProdTaskRepository.class

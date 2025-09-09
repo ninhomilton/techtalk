@@ -14,6 +14,13 @@ public class Recipe {
     public void setDrinks(List<Drink> drinks) {
         this.drinks = drinks;
     }
+
+    public String getFirstDrinkInstructions() {
+        if (drinks != null && !drinks.isEmpty()) {
+            return drinks.get(0).getStrInstructionsES();
+        }
+        return null;
+    }
 }
 
 // Drink class to map individual drink objects

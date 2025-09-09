@@ -21,8 +21,10 @@ public class ProdTaskRepository implements TaskRepository {
     @Override
     public Task save(Task task) {
             // Simulate saving to a database
-        logger.info("Saved task to database: {}", task);
+
+        tasks.remove(task);
         tasks.add(task);
+        logger.info("Saved task to database: {}", task);
         return task;
     }
 

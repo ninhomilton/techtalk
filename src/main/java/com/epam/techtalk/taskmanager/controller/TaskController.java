@@ -36,11 +36,24 @@ public class TaskController {
         taskService.deleteTask(id);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("complete/{id}")
     public Task updateTaskCompletion(@PathVariable Long id, @RequestParam boolean completed) {
         Task task = taskService.findTaskById(id);
         task.setCompleted(completed);
         return taskService.save(task);
+    }
+
+    @PutMapping("/{id}")
+    public Task updateTask(@PathVariable Long id, @RequestBody Task updatedTask) {
+        Task existingTask = taskService.findTaskById(id);
+        existingTask.setTitle(updatedTask.getTitle());
+        existingTask.setDescription(updatedTask.getDescription());
+        existingTask.setDueDate(updatedTask.getDueDate());
+        existingTask.setCompleted(updatedTask.isCompleted());
+        existingTask.setAuthor(updatedTask.getAuthor());
+        existingTask.setRecipeName(updatedTask.getRecipeName());
+        existingTask.setRecipeDetails(updatedTask.getRecipeDetails());
+        return taskService.save(existingTask);
     }
 
     @GetMapping("/recipe")
