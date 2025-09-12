@@ -1,0 +1,12 @@
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/TechtalkApplication.java
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/model/Author.java
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/repository/DevTaskRepository.java
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/controller/TaskController.java
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/repository/ProdTaskRepository.java
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/model/Task.java
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/example/DeserializationExample.java
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/lifecycle/LifeCycleBean.java
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/repository/TaskRepository.java
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/example/SerializationExample.java
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/http/TaskFeignClient.java
+/Users/milton_ortegon/personal_projects/techtalk/techtalk/src/main/java/com/epam/techtalk/taskmanager/service/TaskService.java
